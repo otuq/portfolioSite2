@@ -1,0 +1,39 @@
+@media all and (max-width:750px) {
+  body {
+    background: url("img/background2.png");
+    background-size: contain;
+    background-position: top center;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p, h6 {
+    font-size: 0.8em;
+  }
+
+  .top-title h1 {
+    font-size: 2.5em;
+  }
+
+  .contents-wrapper {
+    border-radius: 50px;
+  }
+
+  .contents-item {
+    flex-wrap: wrap;
+  }
+
+  .info {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 2em;
+  }
+
+  .image-wrapper {
+justify-content: center;
+  }
+}
