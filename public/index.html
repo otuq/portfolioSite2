@@ -1,89 +1,135 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="ja">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.8.4/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.8.4/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.8.4/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.8.4/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.8.4/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.8.4/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.8.4/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.8.4/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.8.4/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.8.4/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"=ポートフォリオ用のサイト>
+  <meta name="google-site-verification" content="pimX3YYCJXMZ2vH9C52kHiqutU5Dof6mTrkyyj1Roo8" />
+  <title>ポートフォリオ用サイト</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+  <!-- font-awesomeの読み込み -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- googleアナリティクス読み込み -->
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Righteous" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+
+  <!-- stylesheet.cssの読み込み -->
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <!-- jquery読み込み -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <!-- loading -->
+  <div id="loading">
+    <p>nowloading</p>
+  </div>
+
+  <div class="container">
+    <div class="top-wrapper">
+      <div class="top-title">
+        <h1>PortfolioSite</h1>
+        <div id="menu-btn"></div>
+        <p>SCROLL</p>
+      </div>
+      <div class="icon-wrapper">
+        <div class="icon">
+          <div class="social-icon">
+            <a href="https://twitter.com/OPQR64013140"><i class="fab fa-twitter"></i></a>
+          </div>
+          <h5 class="tip">twitter</h5>
+        </div>
+      </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+  </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  <!-- contents -->
+  <div class="contents-wrapper">
+    <div class="contents">
+      <h1 class="contents-title">Portifolio</h1>
+      <div class="contents-item">
+        <div class="image-wrapper">
+          <div class="whatIsDayAppVideo-wrapper">
+            <p>今日の出来事、誕生日の有名人検索アプリ</p>
+            <video controls autoplay muted width="400" height="600" src="img/whatIsDayAppVideo.m4v"></video><br>
+            <a href="https://github.com/otuq/whatDayIsToday">source github</a>
+          </div>
+          <div class="rouletteAppVideo-wrapper">
+            <p>ルーレットアプリ</p>
+            <video controls autoplay muted width="400" height="600" src="img/rouletteAppVideo.m4v"></video><br>
+            <a href="https://github.com/otuq/rouletteAppLatestVersion">source github</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contents">
+      <div class="contents">
+        <h1 class="contents-title">Profile</h1>
+        <div class="contents-item">
+          <div class="info">
+            <h4>開発経験</h4>
+            <ul>
+              <li type="none">progateでプログラミング学習を初めhtml,javascript,rubyなどを学習した後、iosアプリの開発に興味を持ち</li>
+              <li type="none">独学で開発を始め、カレンダーアプリやリアルタイムチャットアプリなどを開発。ルーレットアプリを開発しAppStoreで配信</li>
+            </ul>
+            <h4>配信</h4>
+            <ul><a href="https://apps.apple.com/jp/app/thee-roulette/id1602651709">AppStoreで配信中</a></ul>
+            <h4>スキル</h4>
+            <ul>
+              <li type="circle">Xcodeの基本操作</li>
+              <li type="circle">UIKitの実装</li>
+              <li type="circle">変数、定数、関数、型、条件式、継承などswiftの基礎知識</li>
+              <li type="circle">delegateの実装</li>
+              <li type="circle">コーディングのみでのUIの実装</li>
+              <li type="circle">CoreData等を使用したモバイルデータベースの構築</li>
+              <li type="circle">URLSession等を使用したAPI通信の実装</li>
+              <li type="circle">Codableを使用したJSONデータのパース</li>
+              <li type="circle">Firebaseを使用した認証機能、リアルタイムチャットなどの非同期データベースの実装</li>
+              <li type="circle">AppStoreへの申請、配信</li>
+              <li type="circle">githubでのソース管理</li>
+            </ul>
+            <h4>標準ライブラリ</h4>
+            <ul>
+              <li type="circle">UIKit</li>
+              <li type="circle">AVFoundation</li>
+              <li type="circle">CoreGraphics</li>
+              <li type="circle">SafariServices</li>
+            </ul>
+            <h4>外部ライブラリ</h4>
+            <ul>
+              <li type="circle">R.swift</li>
+              <li type="circle">Alamofire</li>
+              <li type="circle">Nuke</li>
+              <li type="circle">PKHUD</li>
+              <li type="circle">Eureka</li>
+              <li type="circle">MessageKit</li>
+              <li type="circle">SwiftLint</li>
+            </ul>
+            <h4>モバイルバックエンド</h4>
+            <ul>
+              <li type="circle">Firebase</li>
+              <li type="circle">Realm</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+  <!-- footer -->
+  <footer>
+    <div class="copyright">©2022-OtuQ</div>
+  </footer>
+  <!-- スクリプト -->
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
 </html>
