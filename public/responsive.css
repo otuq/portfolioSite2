@@ -1,4 +1,4 @@
-@media all and (max-width:750px) {
+@media only screen and (max-width: 40em) {
   body {
     background: url("img/background2.png");
     background-size: contain;
@@ -25,6 +25,7 @@
 
   .contents-item {
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .info {
@@ -34,6 +35,9 @@
   }
 
   .image-wrapper {
-justify-content: center;
+    justify-content: center;
+  }
+  .rouletteAppVideo-wrapper {
+    margin-top: 5em;
   }
 }
