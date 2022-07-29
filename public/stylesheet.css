@@ -193,7 +193,7 @@ a:hover {
 
 /* ここからcontents */
 .contents-wrapper {
-  padding: 5% 10%;
+  padding: 5% 5%;
   margin: 0 5%;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 10px 10px 100px 10px rgba(255, 255, 255, 0.7);
@@ -238,8 +238,6 @@ a:hover {
 }
 
 .image-wrapper {
-  display: flex;
-  flex-wrap: wrap;
   margin: auto;
   text-align: center;
 }
@@ -257,6 +255,12 @@ a:hover {
 display: block;
 font-size: 1em;
 margin-bottom: 1em;
+}
+.rouletteAppVideo-wrapper {
+  margin-top: 5em;
+}
+.matchingAppVideo-wrapper {
+  margin-top: 5em;
 }
 .info {
   width: 100%;

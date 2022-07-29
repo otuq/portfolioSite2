@@ -5,6 +5,7 @@
     background-position: top center;
     background-repeat: repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
   }
 
   h1 {
@@ -36,8 +37,5 @@
 
   .image-wrapper {
     justify-content: center;
-  }
-  .rouletteAppVideo-wrapper {
-    margin-top: 5em;
   }
 }
