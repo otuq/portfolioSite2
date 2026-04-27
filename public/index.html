@@ -2,167 +2,138 @@
 <html lang="ja">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"=ポートフォリオ用のサイト>
-  <meta name="google-site-verification" content="pimX3YYCJXMZ2vH9C52kHiqutU5Dof6mTrkyyj1Roo8" />
-  <title>ポートフォリオ用サイト</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"=ポートフォリオ用のサイト>
+    <meta name="google-site-verification" content="pimX3YYCJXMZ2vH9C52kHiqutU5Dof6mTrkyyj1Roo8" />
+    <title>ポートフォリオ用サイト</title>
 
-  <!-- font-awesomeの読み込み -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- font-awesomeの読み込み -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
-  <!-- googleアナリティクス読み込み -->
-  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Righteous" rel="stylesheet">
+    <!-- googleアナリティクス読み込み -->
+    <link href="https://fonts.googleapis.com/css?family=Patrick+Hand|Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-
-  <!-- stylesheet.cssの読み込み -->
-  <link rel="stylesheet" href="stylesheet.css">
-  <link rel="stylesheet" href="responsive.css">
-
-  <!-- jquery読み込み -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
+    <!-- googleiconの読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    <!-- stylesheet.cssの読み込み -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="commom.css">
 </head>
 
 <body>
-  <!-- loading -->
-  <div id="loading">
-    <p>nowloading</p>
-  </div>
-
-  <div class="container">
-    <div class="top-wrapper">
-      <div class="top-title">
-        <h1>PortfolioSite</h1>
-        <div id="menu-btn"></div>
-        <p>SCROLL</p>
-      </div>
-      <div class="icon-wrapper">
-        <div class="icon">
-          <div class="social-icon">
-            <a href="https://twitter.com/OPQR64013140"><i class="fab fa-twitter"></i></a>
-          </div>
-          <h5 class="tip">twitter</h5>
-        </div>
-      </div>
+    <!-- loading -->
+    <div id="loading">
+        <p>onloading</p>
     </div>
-  </div>
+    <!-- header -->
+    <header class="hero">
+        <nav class="nav">
+            <div class="logo">Sound Create</div>
 
-  <!-- contents -->
-  <div class="contents-wrapper">
-    <div class="contents">
-      <h1 class="contents-title">Portifolio</h1>
-      <div class="contents-item">
-        <div class="image-wrapper">
-          <div class="whatIsDayAppVideo-wrapper">
-            <p>今日の出来事、誕生日の有名人検索アプリ</p>
-            <iframe width="400" height="600"
-            src="https://www.youtube.com/embed/uHCmKQqDkVo"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer;
-            autoplay=1;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture" allowfullscreen></iframe><br>
-            </iframe>
-            <a href="https://github.com/otuq/whatDayIsToday">source github</a>
-          </div>
-          <div class="rouletteAppVideo-wrapper">
-            <p>ルーレットアプリ</p>
-            <iframe width="400" height="600"
-            src="https://www.youtube.com/embed/3j_zsTw9t_o"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer;
-            autoplay=1;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture" allowfullscreen></iframe><br>
-            <a href="https://github.com/otuq/rouletteAppLatestVersion">source github</a>
-          </div>
-          <div class="matchingAppVideo-wrapper">
-            <p>マッチングアプリ</p>
-            <iframe width="400" height="600"
-            src="https://www.youtube.com/embed/7ZDcTJVIKxM"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer;
-            autoplay=1;
-            clipboard-write;
-            encrypted-media;
-            gyroscope;
-            picture-in-picture" allowfullscreen></iframe><br>
-            <a href="https://github.com/otuq/matchingAppLatestVersion">source github</a>
-          </div>
+            <!-- ハンバーガーボタン -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <!-- 　メニュー -->
+            <ul class="nav-menu">
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">サービス</a></li>
+                <li><a href="#">料金プラン</a></li>
+                <li><a href="#">制作実績</a></li>
+                <li><a href="#">お客様の声</a></li>
+            </ul>
+
+            <a href="#" class="nav-btn">お問い合わせ</a>
+        </nav>
+
+        <div class="hero-content">
+            <h2>あなたの音をカタチに</h2>
+            <p>BGM・楽曲制作ならお任せください</p>
+            <a href="#" class="cta-btn">今すぐ相談する</a>
         </div>
-      </div>
-    </div>
-    <div class="contents">
-      <div class="contents">
-        <h1 class="contents-title">Profile</h1>
-        <div class="contents-item">
-          <div class="info">
-            <h4>開発経験</h4>
-            <ul>
-              <li type="none">progateでプログラミング学習を初めhtml,javascript,rubyなどを学習した後、iosアプリの開発に興味を持ち</li>
-              <li type="none">独学で開発を始め、カレンダーアプリやリアルタイムチャットアプリなどを開発。ルーレットアプリを開発しAppStoreで配信</li>
-            </ul>
-            <h4>配信</h4>
-            <ul><a href="https://apps.apple.com/jp/app/thee-roulette/id1602651709">AppStoreで配信中</a></ul>
-            <h4>スキル</h4>
-            <ul>
-              <li type="circle">Xcodeの基本操作</li>
-              <li type="circle">UIKitの実装</li>
-              <li type="circle">変数、定数、関数、型、条件式、継承などswiftの基礎知識</li>
-              <li type="circle">delegateの実装</li>
-              <li type="circle">コーディングのみでのUIの実装</li>
-              <li type="circle">CoreData等を使用したモバイルデータベースの構築</li>
-              <li type="circle">URLSession等を使用したAPI通信の実装</li>
-              <li type="circle">Codableを使用したJSONデータのパース</li>
-              <li type="circle">Firebaseを使用した認証機能、リアルタイムチャットなどの非同期データベースの実装</li>
-              <li type="circle">AppStoreへの申請、配信</li>
-              <li type="circle">githubでのソース管理</li>
-            </ul>
-            <h4>標準ライブラリ</h4>
-            <ul>
-              <li type="circle">UIKit</li>
-              <li type="circle">AVFoundation</li>
-              <li type="circle">CoreGraphics</li>
-              <li type="circle">SafariServices</li>
-            </ul>
-            <h4>外部ライブラリ</h4>
-            <ul>
-              <li type="circle">R.swift</li>
-              <li type="circle">Alamofire</li>
-              <li type="circle">Nuke</li>
-              <li type="circle">PKHUD</li>
-              <li type="circle">Eureka</li>
-              <li type="circle">MessageKit</li>
-              <li type="circle">SwiftLint</li>
-            </ul>
-            <h4>モバイルバックエンド</h4>
-            <ul>
-              <li type="circle">Firebase</li>
-              <li type="circle">Realm</li>
-            </ul>
-          </div>
+    </header>
+
+
+    <!-- feature -->
+    <h3 class="contents-title">選ばれる3つの理由</h3>
+    <section class="features">
+        <div class="feature">
+            <button class="button">
+                <span class="material-symbols-rounded">currency_yen</span>
+            </button>
+            <div class="feature-text">
+                <h5>安心の価格設定</h5>
+                <p>ご予算に合わせたプランでプランでご提案いたします。</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
+        <div class="feature">
+            <button class="button">
+                <span class="material-symbols-outlined">schedule</span>
+            </button>
+            <div class="feature-text">
+                <h5>迅速な対応</h5>
+                <p>ご依頼から納品までスピーディーに対応いたします。</p>
+            </div>
+        </div>
+        <div class="feature">
+            <button class="button">
+                <span class="material-symbols-outlined">handyman</span>
+            </button>
+            <div class="feature-text">
+                <h5>修正も可能</h5>
+                <p>工数内であれば無料にて修正が可能です。</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- footer -->
-  <footer>
-    <!-- <div class="copyright">©2022-OtuQ</div> -->
-  </footer>
-  <!-- スクリプト -->
-  <script type="text/javascript" src="script.js"></script>
+    <!-- price -->
+    <h3 class="contents-title">料金プラン</h3>
+    <section class="price">
+        <div class="price-text">
+            <h1 class="price-text-yen">¥5000</h1>
+            <h4>〜制作可能</h4>
+        </div>
+        <p>内容用途に合わせてお見積もりいたします。お気軽にご相談ください。</p>
+    </section>
 
+    <!-- contact -->
+    <section class="contact">
+        <h3>お気軽にお問い合わせください。</h3>
+        <p>ご相談・お見積りは無料です。まずはお気軽にご連絡ください。</p>
+        Ï<a href="#" class="contact-btn">お問い合わせ</a>
+    </section>
+
+    <!-- スクリプト -->
+    <script>
+        // ローディング画面
+        window.addEventListener("load", () => {
+            const loading = document.getElementById("loading");
+            loading.style.transition = "opacity 1s";
+            loading.style.opacity = "0";
+
+            setTimeout(() => {
+                loading.style.display = "none";
+            }, 1000);
+        });
+        // ハンバーガーメニュークリックアクション
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+            hamburger.classList.toggle("active");
+            document.body.classList.toggle("menu-open");
+
+        });
+    </script>
 </body>
 
 </html>

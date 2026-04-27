@@ -1,0 +1,62 @@
+/* ------- ここから共通のCSS -------- */
+* {
+  font-family: 'arial', cursive;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: clamp(14px, 1.5vw, 18px);
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+span,
+div {
+  margin: 0;
+  padding: 0;
+  font-weight: lighter;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: clamp(2rem, 6vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 5vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 2.5vw, 2rem);
+}
+
+h6 {
+  font-size: clamp(0.9rem, 2vw, 1.5rem);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*-------  ここまで共通のCSS  --------*/
