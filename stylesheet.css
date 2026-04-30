@@ -3,18 +3,17 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: table;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #000;
   width: 100vw;
   height: 100vh;
   z-index: 9999
 }
 
-#loading p {
-  display: table-cell;
+.loading-text {
   color: white;
-  text-align: center;
-  vertical-align: middle;
   font-size: 2em;
   animation: loading 5s infinite;
 }
